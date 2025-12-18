@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
- 
-    <title>Monitoring Cuaca</title>
+    <meta charset="UTF-8">
+    <title>Weather Monitoring</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="weather-card">
-        <h1>MONITORING CUACA</h1>
-        <p class="subtitle"> Cek Kondisi Cuaca kota</p>
-    <div class="search-box">
-        <input type="text" id="cityInput" placeholder="Masukkan nama kota">
-        <button id="searchBtn">Cari</button>
-    </div>
 
-    <div id="weatherResult" class="weather-result"></div>
+<div class="card">
+    <h1>🌦️ Weather Monitoring</h1>
 
-    <script src="script.js"></script>
+    <input type="text" id="cityInput" placeholder="Masukkan nama kota">
+    <button id="btnSearch">Cari Cuaca</button>
 
+    <h2 id="currentTitle" class="section-title" style="display:none;"></h2>
 
+    <div id="currentWeather" class="current-box" style="display:none;"></div>
+
+    <h2 id="forecastTitle" class="section-title" style="display:none;">
+        Forecast 24 Jam (per 3 Jam)
+    </h2>
+    <div id="forecast" class="forecast-grid" style="display:none;"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
